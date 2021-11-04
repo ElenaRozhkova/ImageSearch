@@ -20,7 +20,7 @@ function SaveCard({cardToCorb, setCardToCorb}) {
   <div className="App-cards App App-content">
       { cardToCorb.map((item, i) =>         
      <div className="Card" key={i}>
-              <Link to={`/${item.id}`} className="header__text">
+              <Link to={`/ImageSearch/${item.id}`} className="header__text">
         <img className="Card-image" src={item.urls.regular} alt={item.alt_description}  />
       </Link>
         <div className="corbContainer">
